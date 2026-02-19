@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="project.project_project_1" model="project.project">
+            <field name="name">Demo Project</field>
+            <field name="user_id" ref="base.user_admin"/>
+        </record>
+
+        <record id="project.task_tag_development" model="project.task.tag">
+            <field name="name">Development</field>
+            <field name="color">1</field>
+        </record>
+
+        <record id="project.task_tag_urgent" model="project.task.tag">
+            <field name="name">Urgent</field>
+            <field name="color">2</field>
+        </record>
+    </data>
+</odoo>

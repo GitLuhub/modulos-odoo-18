@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_module_menu" model="ir.ui.menu">
+        <field name="name">Project Extended</field>
+        <field name="sequence">90</field>
+    </record>
+
+    <record id="project_config_menu" model="ir.ui.menu">
+        <field name="name">Configuration</field>
+        <field name="parent_id" ref="project_module_menu"/>
+        <field name="sequence">100</field>
+    </record>
+
+    <record id="action_project_task_tag" model="ir.actions.act_window">
+        <field name="name">Task Tags</field>
+        <field name="res_model">project.task.tag</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="project_task_tag_menu" model="ir.ui.menu">
+        <field name="name">Task Tags</field>
+        <field name="action" ref="action_project_task_tag"/>
+        <field name="parent_id" ref="project_config_menu"/>
+    </record>
+</odoo>

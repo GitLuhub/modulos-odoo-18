@@ -1,0 +1,116 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*swo
+*~
+
+# Odoo specific
+*.pot
+*.po
+*.mo
+*.bak
+*.log
+
+# Local configuration
+odoo.conf
+*.local
+
+# Data directories
+data/
+filestore/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.swp
+
+# Secrets (NUNCA subir)
+*.key
+credentials.json
+*.pem
+*.swo
+*~
+
+# Odoo specific
+*.pot
+*.po
+*.mo
+*.bak
+*.log
+
+# Local configuration
+odoo.conf
+*.local
+
+# Data directories
+data/
+filestore/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.swp
