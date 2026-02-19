@@ -1,3 +1,7 @@
+# Documentación personal (no subir a GitHub)
+ODOO18_SKILL.md
+Plan Optimizado para Portafolio Profesional.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -66,6 +70,7 @@ venv.bak/
 # Local configuration
 odoo.conf
 *.local
+config/odoo.conf
 
 # Data directories
 data/
@@ -80,37 +85,8 @@ Thumbs.db
 
 # Backup files
 *.backup
-*.swp
 
 # Secrets (NUNCA subir)
 *.key
 credentials.json
 *.pem
-*.swo
-*~
-
-# Odoo specific
-*.pot
-*.po
-*.mo
-*.bak
-*.log
-
-# Local configuration
-odoo.conf
-*.local
-
-# Data directories
-data/
-filestore/
-
-# Docker
-.docker/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Backup files
-*.backup
-*.swp
