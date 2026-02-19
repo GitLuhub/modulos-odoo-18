@@ -147,17 +147,17 @@ Crear archivo `.env`:
 DB_HOST=postgres
 DB_PORT=5432
 DB_USER=odoo
-DB_PASSWORD=tu_contraseña_segura
+DB_PASSWORD=your_database_password_here
 DB_NAME=odoo
 
 # SMTP
 SMTP_SERVER=smtp.ejemplo.com
 SMTP_PORT=587
 SMTP_USER=tu_email@ejemplo.com
-SMTP_PASSWORD=tu_contraseña
+SMTP_PASSWORD=your_smtp_password_here
 
 # Odoo
-ADMIN_PASSWORD=tu_contraseña_admin
+ADMIN_PASSWORD=your_admin_password_here
 ```
 
 ### Configuración de Odoo

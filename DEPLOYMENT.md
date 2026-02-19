@@ -30,13 +30,13 @@ Edit `.env` with your values:
 DB_HOST=postgres
 DB_PORT=5432
 DB_USER=odoo
-DB_PASSWORD=secure_password_here
+DB_PASSWORD=your_database_password_here
 DB_NAME=odoo
 
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=your_email@example.com
-SMTP_PASSWORD=your_smtp_password
+SMTP_PASSWORD=your_smtp_password_here
 SMTP_SSL=True
 ```
 
