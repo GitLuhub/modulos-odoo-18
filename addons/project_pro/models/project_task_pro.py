@@ -8,6 +8,7 @@ class ProjectTaskPro(models.Model):
 
     estimated_hours = fields.Float(string='Estimated Hours')
     actual_hours = fields.Float(string='Actual Hours')
+    planned_hours = fields.Float(string='Planned Hours')
     
     remaining_hours = fields.Float(
         string='Remaining Hours',
@@ -67,13 +68,15 @@ class ProjectTaskPro(models.Model):
                 total_count = len(task.checklist_ids)
                 task.progress_percentage = (done_count / total_count) * 100
 
-    @api.constrains('estimated_hours', 'actual_hours')
+    @api.constrains('estimated_hours', 'actual_hours', 'planned_hours')
     def _check_hours(self):
         for task in self:
             if task.estimated_hours < 0:
                 raise ValidationError('Estimated hours cannot be negative')
             if task.actual_hours < 0:
                 raise ValidationError('Actual hours cannot be negative')
+            if task.planned_hours < 0:
+                raise ValidationError('Planned hours cannot be negative')
 
     def action_complete_checklist(self):
         self.ensure_one()
