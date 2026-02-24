@@ -218,3 +218,23 @@ class TestProjectTaskPro(TransactionCase):
         self.assertEqual(checklist_items[0].name, 'Item 1')
         self.assertEqual(checklist_items[1].name, 'Item 2')
         self.assertEqual(checklist_items[2].name, 'Item 3')
+
+    def test_create_task_with_planned_hours(self):
+        task = self.task_model.create({
+            'name': 'Test Task',
+            'planned_hours': 8.0,
+        })
+        self.assertEqual(task.planned_hours, 8.0)
+
+    def test_planned_hours_default_value(self):
+        task = self.task_model.create({
+            'name': 'Test Task',
+        })
+        self.assertEqual(task.planned_hours, 0.0)
+
+    def test_negative_planned_hours_raises_error(self):
+        with self.assertRaises(ValidationError):
+            self.task_model.create({
+                'name': 'Invalid Task',
+                'planned_hours': -5.0,
+            })
